@@ -1,0 +1,186 @@
+here is my html code based on it create a css file and js for dark mode
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chahia - Authentic Algerian Cuisine</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dark-mode.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Chahia</h1>
+        <p>Authentic Algerian Cuisine</p>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count">0</span>
+        </div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Experience Authentic Algerian Flavors</h1>
+      <p>Bringing the taste of Algeria to your doorstep</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Menu</h2>
+        <p>Discover our delicious Algerian specialties</p>
+      </div>
+      <div class="menu-items" id="menu-container">
+        <!-- Menu items will be inserted here from JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Chahia</h2>
+        <p>Our story and passion for Algerian cuisine</p>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/about us.jpg" alt="Restaurant interior">
+        </div>
+        <div class="about-text">
+          <h3>Our Story</h3>
+          <p>Chahia, meaning "appetite" in Arabic, was born from a passion for sharing authentic Algerian flavors with the world. Our recipes have been passed down through generations, maintaining the true essence of Algerian cuisine.</p>
+          <p>We carefully select the finest ingredients and spices to create dishes that transport you to the streets of Algiers, the mountains of Kabylie, and the Sahara desert.</p>
+          <h3>Our Mission</h3>
+          <p>To provide an authentic taste of Algeria while educating our customers about the rich culinary traditions of this beautiful North African country.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Address</h3>
+              <p>Sidi Abdellah,boulevard principal</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>+213 0797032059</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>chahiarestaurant@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Opening Hours</h3>
+              <p>Sunday - Thursday: 11:00 AM - 10:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Chahia</h2>
+          <p>Authentic Algerian Cuisine</p>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Chahia Restaurant.All rights reserved.|Développé par:Ait Abdeslam.K,Belmokhtar.R</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Your Order</h2>
+      <div id="cart-items">
+        <!-- Cart items will be inserted here -->
+      </div>
+      <div class="cart-total">
+        <h3>Total: <span id="cart-total">$0.00</span></h3>
+      </div>
+      <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+
+  <script src="menu.js"></script>
+  <script src="cart.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
